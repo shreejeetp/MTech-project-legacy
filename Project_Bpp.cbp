@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Project_Bpp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/Project_Bpp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="crossover.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crossover.h" />
+		<Unit filename="crud_gene.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crud_gene.h" />
+		<Unit filename="crud_vm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crud_vm.h" />
+		<Unit filename="data_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="data_read.h" />
+		<Unit filename="evaluation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="evaluation.h" />
+		<Unit filename="first_fit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="first_fit.h" />
+		<Unit filename="heuristics_bpp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="heuristics_bpp.h" />
+		<Unit filename="integrity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="integrity.h" />
+		<Unit filename="macros.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="population.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="population.h" />
+		<Unit filename="structures.h" />
+		<Unit filename="unpack_n_merge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="unpack_n_merge.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

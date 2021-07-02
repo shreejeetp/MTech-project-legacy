@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1624786871 source:d:\projects\rac\project_bpp_heuristics\project_bpp\data_read.c
+	"data_read.h"
+
+1624786908 d:\projects\rac\project_bpp_heuristics\project_bpp\data_read.h
+	"macros.h"
+	"structures.h"
+
+1625216782 d:\projects\rac\project_bpp_heuristics\project_bpp\macros.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1624829743 d:\projects\rac\project_bpp_heuristics\project_bpp\structures.h
+	"macros.h"
+
+1625216218 source:d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.c
+	"evaluation.h"
+
+1625183048 d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.h
+	"macros.h"
+	"structures.h"
+
+1625069412 source:d:\projects\rac\project_bpp_heuristics\project_bpp\integrity.c
+	"integrity.h"
+
+1624996942 d:\projects\rac\project_bpp_heuristics\project_bpp\integrity.h
+	"macros.h"
+	"structures.h"
+
+1625182410 source:d:\projects\rac\project_bpp_heuristics\project_bpp\crossover.c
+	"crossover.h"
+
+1625180374 d:\projects\rac\project_bpp_heuristics\project_bpp\crossover.h
+	"macros.h"
+	"structures.h"
+	"crud_gene.h"
+	"crud_vm.h"
+	"integrity.h"
+	"heuristics_bpp.h"
+	"unpack_n_merge.h"
+
+1624994133 d:\projects\rac\project_bpp_heuristics\project_bpp\crud_gene.h
+	"macros.h"
+	"structures.h"
+	"integrity.h"
+	"crud_vm.h"
+
+1625182375 d:\projects\rac\project_bpp_heuristics\project_bpp\crud_vm.h
+	"macros.h"
+	"structures.h"
+	"integrity.h"
+	"evaluation.h"
+
+1625174050 d:\projects\rac\project_bpp_heuristics\project_bpp\heuristics_bpp.h
+	"macros.h"
+	"structures.h"
+	"crud_gene.h"
+	"crud_vm.h"
+	"integrity.h"
+	"first_fit.h"
+
+1624832796 d:\projects\rac\project_bpp_heuristics\project_bpp\first_fit.h
+	"macros.h"
+	"structures.h"
+	"crud_vm.h"
+	"crud_gene.h"
+
+1625164878 d:\projects\rac\project_bpp_heuristics\project_bpp\unpack_n_merge.h
+	"macros.h"
+	"structures.h"
+	"crud_gene.h"
+	"crud_vm.h"
+	"integrity.h"
+	"heuristics_bpp.h"
+
+1625216355 source:d:\projects\rac\project_bpp_heuristics\project_bpp\crud_gene.c
+	"crud_gene.h"
+
+1625182374 source:d:\projects\rac\project_bpp_heuristics\project_bpp\crud_vm.c
+	"crud_vm.h"
+
+1624993247 source:d:\projects\rac\project_bpp_heuristics\project_bpp\first_fit.c
+	"first_fit.h"
+
+1625175895 source:d:\projects\rac\project_bpp_heuristics\project_bpp\heuristics_bpp.c
+	"heuristics_bpp.h"
+
+1625216356 source:d:\projects\rac\project_bpp_heuristics\project_bpp\main.c
+	"macros.h"
+	"structures.h"
+	"data_read.h"
+	"population.h"
+	"evaluation.h"
+	"crossover.h"
+
+1624887617 d:\projects\rac\project_bpp_heuristics\project_bpp\population.h
+	"macros.h"
+	"structures.h"
+	"crud_gene.h"
+	"evaluation.h"
+	"first_fit.h"
+
+1625182975 source:d:\projects\rac\project_bpp_heuristics\project_bpp\population.c
+	"population.h"
+
+1625181408 source:d:\projects\rac\project_bpp_heuristics\project_bpp\unpack_n_merge.c
+	"unpack_n_merge.h"
+
