@@ -6,18 +6,18 @@
 	"macros.h"
 	"structures.h"
 
-1625388326 d:\projects\rac\project_bpp_heuristics\project_bpp\macros.h
+1625406578 d:\projects\rac\project_bpp_heuristics\project_bpp\macros.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
-1624829743 d:\projects\rac\project_bpp_heuristics\project_bpp\structures.h
+1625405962 d:\projects\rac\project_bpp_heuristics\project_bpp\structures.h
 	"macros.h"
 
-1625216218 source:d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.c
+1625406118 source:d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.c
 	"evaluation.h"
 
-1625183048 d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.h
+1625404949 d:\projects\rac\project_bpp_heuristics\project_bpp\evaluation.h
 	"macros.h"
 	"structures.h"
 
@@ -28,7 +28,7 @@
 	"macros.h"
 	"structures.h"
 
-1625182410 source:d:\projects\rac\project_bpp_heuristics\project_bpp\crossover.c
+1625404757 source:d:\projects\rac\project_bpp_heuristics\project_bpp\crossover.c
 	"crossover.h"
 
 1625180374 d:\projects\rac\project_bpp_heuristics\project_bpp\crossover.h
@@ -86,7 +86,7 @@
 1625175895 source:d:\projects\rac\project_bpp_heuristics\project_bpp\heuristics_bpp.c
 	"heuristics_bpp.h"
 
-1625216356 source:d:\projects\rac\project_bpp_heuristics\project_bpp\main.c
+1625406122 source:d:\projects\rac\project_bpp_heuristics\project_bpp\main.c
 	"macros.h"
 	"structures.h"
 	"data_read.h"

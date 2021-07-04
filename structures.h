@@ -62,7 +62,7 @@ struct gene{
 };
 
 struct population{
-    struct gene* gene_list[10];
+    struct gene* gene_list[NO_POP];
     int n;
 }*head_population;
 

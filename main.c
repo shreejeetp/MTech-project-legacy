@@ -15,11 +15,11 @@ int main()
 
     createPop();
     geneptr best_genes[NO_CROSSOVER+1];
+    elitism(head_population);
     for(int i=0;i<NO_CROSSOVER;i++){
         best_genes[i]=createCopyGene(searchBestGeneEnrg(head_population));
-        elitism(head_population);
-        printBestGene(head_population);
         crossMut(head_population);
+        printBestGene(head_population);
     }
     best_genes[NO_CROSSOVER]=searchBestGeneEnrg(head_population);
     printStats(best_genes[NO_CROSSOVER]);

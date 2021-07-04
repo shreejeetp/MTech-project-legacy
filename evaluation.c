@@ -55,7 +55,7 @@ void fitness1(geneptr t1){
 void printBestGene(popptr h1){
     geneptr best_gene=NULL;
     float best_utlz=0;
-    printf("\n\nFinding gene with most utilization");
+    printf("\n\nFinding gene with most utilization:");
     for(int i=0;i<h1->n;i++){
         geneptr t1=h1->gene_list[i];
         printf("\n\tGene:%d utlz:%f",i,t1->utlz);
@@ -174,6 +174,32 @@ geneptr searchBestGeneUtlzWithMinNpm(popptr h1){
     return(best_gene);
 }
 
+geneptr findWorstGene(popptr h1){
+    int max_npm=0;
+    for(int i=0;i<h1->n;i++){
+        geneptr t1=h1->gene_list[i];
+        if(t1->npm>max_npm){
+            max_npm=t1->npm;
+        }
+    }
+    geneptr worst_gene=NULL;
+    float worst_energy_consumption=0;
+
+    for(int i=0;i<h1->n;i++){
+        geneptr t1=h1->gene_list[i];
+        if(t1->npm!=max_npm){
+            continue;
+        }
+        fitness1(t1);
+        if(t1->energy_consumption>worst_energy_consumption){
+            worst_gene=t1;
+            worst_energy_consumption=t1->energy_consumption;
+        }
+    }
+
+    return(worst_gene);
+}
+
 void calculateContRes(geneptr t1){
     for(int i=0;i<t1->npm;i++){
         pmptr pm=t1->pm_list[i];
@@ -200,4 +226,36 @@ void printStats(geneptr t1){
             }
         }
     }
+}
+
+//returns 0 if the gene is not unique to the population
+int uniqueness(geneptr t1, popptr h1){
+    for(int i=0;i<h1->n;i++){
+        geneptr t2=h1->gene_list[i];
+        if(t1->utlz==t2->utlz){
+            return(0);
+        }
+        if(t1->npm!=t2->npm){
+            continue;
+        }
+
+        int same_pm_count=0;
+
+        for(int j=0;j<t1->npm;j++){
+            pmptr pm1=t1->pm_list[j];
+            pmptr pm2=t2->pm_list[j];
+
+            if(pm2->cpu!=pm1->cpu){
+                break;
+            }
+            same_pm_count++;
+        }
+
+        if(same_pm_count==t1->npm){
+            return(0);
+        }
+    }
+
+    return(1);
+
 }

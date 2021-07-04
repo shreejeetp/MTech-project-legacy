@@ -164,5 +164,8 @@ void postCrossMut(geneptr child,popptr h1){
     integrity_all_containers(child);
     fitness(child);
     //remove_empty_pm_vm(child);
-    addGene(h1,child);
+    if(uniqueness(child,h1)==1){
+            removeGene(h1,findWorstGene(h1));
+            addGene(h1,child);
+    }
 }

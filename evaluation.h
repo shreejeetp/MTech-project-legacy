@@ -14,5 +14,7 @@ geneptr searchBestGeneUtlzWithMinNpm(popptr h1);
 void printBestGeneEnrg(popptr h1);
 geneptr searchBestGeneEnrg(popptr h1);
 geneptr searchBestGeneEnrgWithMinNpm(popptr h1);
+int uniqueness(geneptr t1, popptr h1);
+geneptr findWorstGene(popptr h1);
 
 #endif // EVALUATION_H_INCLUDED
